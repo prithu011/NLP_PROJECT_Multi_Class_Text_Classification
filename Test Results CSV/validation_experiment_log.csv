@@ -1,0 +1,31 @@
+run_id,run_number,model,representation,preprocessing,split_name,max_features,ngram_min,ngram_max,C,max_iter,epochs,batch_size,hidden_units,dropout,embedding_dim,max_len,rnn_units,validation_accuracy,validation_macro_f1,runtime_seconds,num_words,window,min_count,word2vec_epochs
+RUN_01,1,Logistic Regression,TF-IDF,no_preprocessing,split_80_20_seed42,20000.0,1.0,1.0,1.0,200.0,,,,,,,,0.9184565916398714,0.9115884481029012,3.09,,,,
+RUN_02,2,Logistic Regression,TF-IDF,no_preprocessing,split_75_25_seed7,30000.0,1.0,2.0,2.0,300.0,,,,,,,,0.9233935278077893,0.9175333807504024,6.32,,,,
+RUN_03,3,Logistic Regression,TF-IDF,extreme_preprocessing,split_80_20_seed42,20000.0,1.0,1.0,1.0,200.0,,,,,,,,0.9130546623794212,0.905470032949391,2.44,,,,
+RUN_04,4,Logistic Regression,TF-IDF,extreme_preprocessing,split_70_30_seed21,30000.0,1.0,2.0,2.0,300.0,,,,,,,,0.9159663865546218,0.9085447870809752,4.96,,,,
+RUN_05,5,Logistic Regression,TF-IDF,optimum_preprocessing,split_80_20_seed42,20000.0,1.0,1.0,1.0,200.0,,,,,,,,0.9140836012861736,0.9065133354531542,2.17,,,,
+RUN_06,6,Logistic Regression,TF-IDF,optimum_preprocessing,split_75_25_seed7,30000.0,1.0,2.0,2.0,300.0,,,,,,,,0.919226218037763,0.9127170734745096,4.55,,,,
+RUN_07,7,Deep Neural Network,TF-IDF,no_preprocessing,split_80_20_seed42,8000.0,1.0,1.0,,,5.0,256.0,256.0,0.3,,,,0.9179421221864952,0.9110111701322402,6.41,,,,
+RUN_08,8,Deep Neural Network,TF-IDF,no_preprocessing,split_75_25_seed7,10000.0,1.0,2.0,,,6.0,256.0,384.0,0.4,,,,0.9152647013427998,0.909280022028852,9.53,,,,
+RUN_09,9,Deep Neural Network,TF-IDF,extreme_preprocessing,split_80_20_seed42,8000.0,1.0,1.0,,,8.0,256.0,256.0,0.3,,,,0.9136334405144695,0.9052898358818843,5.3,,,,
+RUN_10,10,Deep Neural Network,TF-IDF,extreme_preprocessing,split_70_30_seed21,10000.0,1.0,2.0,,,10.0,256.0,384.0,0.4,,,,0.9138226719259133,0.906126382455038,7.63,,,,
+RUN_11,11,Deep Neural Network,TF-IDF,optimum_preprocessing,split_80_20_seed42,8000.0,1.0,1.0,,,5.0,256.0,256.0,0.3,,,,0.9129260450160772,0.9053346372128404,5.29,,,,
+RUN_12,12,Deep Neural Network,TF-IDF,optimum_preprocessing,split_75_25_seed7,10000.0,1.0,2.0,,,16.0,256.0,384.0,0.4,,,,0.9154704944178629,0.9090741185484182,7.94,,,,
+RUN_13,13,SimpleRNN,Skip-gram Word2Vec,no_preprocessing,split_80_20_seed42,,,,,,4.0,256.0,,0.3,100.0,45.0,64.0,0.872411575562701,0.8634950155614878,14.14,10000.0,5.0,2.0,5.0
+RUN_14,14,GRU,Skip-gram Word2Vec,no_preprocessing,split_75_25_seed7,,,,,,4.0,256.0,,0.3,100.0,50.0,64.0,0.902351185882595,0.8943536487842937,13.22,12000.0,5.0,2.0,5.0
+RUN_15,15,LSTM,Skip-gram Word2Vec,no_preprocessing,split_70_30_seed21,,,,,,5.0,256.0,,0.35,150.0,55.0,64.0,0.8877122277482421,0.8760160042599168,16.02,12000.0,5.0,2.0,5.0
+RUN_16,16,Bidirectional SimpleRNN,Skip-gram Word2Vec,no_preprocessing,split_80_20_seed42,,,,,,4.0,256.0,,0.3,100.0,50.0,64.0,0.8656591639871383,0.8569311651909669,3.88,12000.0,5.0,2.0,5.0
+RUN_17,17,Bidirectional GRU,Skip-gram Word2Vec,no_preprocessing,split_75_25_seed7,,,,,,5.0,256.0,,0.35,150.0,55.0,64.0,0.9070329783402789,0.8993554376096081,17.04,15000.0,5.0,2.0,5.0
+RUN_18,18,Bidirectional LSTM,Skip-gram Word2Vec,no_preprocessing,split_70_30_seed21,,,,,,5.0,256.0,,0.4,150.0,60.0,64.0,0.8949579831932774,0.8855884216265679,4.49,15000.0,5.0,2.0,5.0
+RUN_19,19,SimpleRNN,Skip-gram Word2Vec,extreme_preprocessing,split_80_20_seed42,,,,,,4.0,256.0,,0.3,100.0,45.0,64.0,0.432604501607717,0.26789372491157093,9.68,10000.0,5.0,2.0,5.0
+RUN_20,20,GRU,Skip-gram Word2Vec,extreme_preprocessing,split_75_25_seed7,,,,,,4.0,256.0,,0.3,100.0,50.0,64.0,0.9025569789576581,0.8945449013306901,8.89,12000.0,5.0,2.0,5.0
+RUN_21,21,LSTM,Skip-gram Word2Vec,extreme_preprocessing,split_70_30_seed21,,,,,,5.0,256.0,,0.35,150.0,55.0,64.0,0.5748585148345052,0.35943522325242694,11.03,12000.0,5.0,2.0,5.0
+RUN_22,22,Bidirectional SimpleRNN,Skip-gram Word2Vec,extreme_preprocessing,split_80_20_seed42,,,,,,4.0,256.0,,0.3,100.0,50.0,64.0,0.8913826366559485,0.8815583965261226,3.47,12000.0,5.0,2.0,5.0
+RUN_23,23,Bidirectional GRU,Skip-gram Word2Vec,extreme_preprocessing,split_75_25_seed7,,,,,,5.0,256.0,,0.35,150.0,55.0,64.0,0.9079075989092967,0.8988253406253726,12.01,15000.0,5.0,2.0,5.0
+RUN_24,24,Bidirectional LSTM,Skip-gram Word2Vec,extreme_preprocessing,split_70_30_seed21,,,,,,5.0,256.0,,0.4,150.0,60.0,64.0,0.9058909277996913,0.8964070798998354,4.23,15000.0,5.0,2.0,5.0
+RUN_25,25,SimpleRNN,Skip-gram Word2Vec,optimum_preprocessing,split_80_20_seed42,,,,,,4.0,256.0,,0.3,100.0,45.0,64.0,0.33408360128617365,0.1252108941913714,9.12,10000.0,5.0,2.0,5.0
+RUN_26,26,GRU,Skip-gram Word2Vec,optimum_preprocessing,split_75_25_seed7,,,,,,4.0,256.0,,0.3,100.0,50.0,64.0,0.9071358748778103,0.8985196217677773,9.36,12000.0,5.0,2.0,5.0
+RUN_27,27,LSTM,Skip-gram Word2Vec,optimum_preprocessing,split_70_30_seed21,,,,,,5.0,256.0,,0.35,150.0,55.0,64.0,0.8606156748413651,0.851963135188233,11.31,12000.0,5.0,2.0,5.0
+RUN_28,28,Bidirectional SimpleRNN,Skip-gram Word2Vec,optimum_preprocessing,split_80_20_seed42,,,,,,4.0,256.0,,0.3,100.0,50.0,64.0,0.8951125401929261,0.8863141713846322,3.47,12000.0,5.0,2.0,5.0
+RUN_29,29,Bidirectional GRU,Skip-gram Word2Vec,optimum_preprocessing,split_75_25_seed7,,,,,,5.0,256.0,,0.35,150.0,55.0,64.0,0.9135669084735298,0.905947645534532,12.28,15000.0,5.0,2.0,5.0
+RUN_30,30,Bidirectional LSTM,Skip-gram Word2Vec,optimum_preprocessing,split_70_30_seed21,,,,,,5.0,256.0,,0.4,150.0,60.0,64.0,0.9072629051620649,0.8992766642366053,4.25,15000.0,5.0,2.0,5.0

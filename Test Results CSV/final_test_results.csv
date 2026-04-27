@@ -1,0 +1,25 @@
+source_run_id,model,representation,preprocessing,test_accuracy,test_macro_f1,runtime_seconds
+RUN_23,Bidirectional GRU,Skip-gram Word2Vec,extreme_preprocessing,0.9019166666666667,0.9017493553910182,14.78
+RUN_17,Bidirectional GRU,Skip-gram Word2Vec,no_preprocessing,0.9,0.8995748579664806,21.99
+RUN_29,Bidirectional GRU,Skip-gram Word2Vec,optimum_preprocessing,0.9046666666666666,0.9040499604034443,14.7
+RUN_24,Bidirectional LSTM,Skip-gram Word2Vec,extreme_preprocessing,0.907,0.9064260699745967,14.66
+RUN_18,Bidirectional LSTM,Skip-gram Word2Vec,no_preprocessing,0.8921666666666667,0.891235919743253,22.04
+RUN_30,Bidirectional LSTM,Skip-gram Word2Vec,optimum_preprocessing,0.9060833333333334,0.9059162047800132,14.85
+RUN_22,Bidirectional SimpleRNN,Skip-gram Word2Vec,extreme_preprocessing,0.8938333333333334,0.8933623287752361,11.32
+RUN_16,Bidirectional SimpleRNN,Skip-gram Word2Vec,no_preprocessing,0.495,0.38253035144716246,17.36
+RUN_28,Bidirectional SimpleRNN,Skip-gram Word2Vec,optimum_preprocessing,0.888,0.8877743848040471,11.49
+RUN_20,GRU,Skip-gram Word2Vec,extreme_preprocessing,0.9046666666666666,0.9042267993441351,11.02
+RUN_14,GRU,Skip-gram Word2Vec,no_preprocessing,0.8985,0.8984167017879785,16.92
+RUN_26,GRU,Skip-gram Word2Vec,optimum_preprocessing,0.9004166666666666,0.9001125350680883,11.13
+RUN_21,LSTM,Skip-gram Word2Vec,extreme_preprocessing,0.8984166666666666,0.8983996549294138,14.37
+RUN_15,LSTM,Skip-gram Word2Vec,no_preprocessing,0.8939166666666667,0.8937292302374966,21.56
+RUN_27,LSTM,Skip-gram Word2Vec,optimum_preprocessing,0.8773333333333333,0.8763328799364442,15.01
+RUN_19,SimpleRNN,Skip-gram Word2Vec,extreme_preprocessing,0.25016666666666665,0.10034644637050874,11.26
+RUN_13,SimpleRNN,Skip-gram Word2Vec,no_preprocessing,0.86025,0.860527912097241,17.33
+RUN_25,SimpleRNN,Skip-gram Word2Vec,optimum_preprocessing,0.25033333333333335,0.10069890185247551,11.59
+RUN_10,Deep Neural Network,TF-IDF,extreme_preprocessing,0.9016666666666666,0.9013904539202995,16.45
+RUN_07,Deep Neural Network,TF-IDF,no_preprocessing,0.9065,0.9063725240431765,8.11
+RUN_12,Deep Neural Network,TF-IDF,optimum_preprocessing,0.9018333333333334,0.9015634965688666,22.92
+RUN_04,Logistic Regression,TF-IDF,extreme_preprocessing,0.9148333333333334,0.914508077779883,5.54
+RUN_02,Logistic Regression,TF-IDF,no_preprocessing,0.8936666666666667,0.8940827338621202,8.13
+RUN_06,Logistic Regression,TF-IDF,optimum_preprocessing,0.9158333333333334,0.9154824673695513,5.85
